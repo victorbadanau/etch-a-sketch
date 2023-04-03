@@ -5,7 +5,23 @@ body {
     align-items: center;
 }
 
-.container {
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+}
+
+.footer {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.board {
     border: 1px solid black;
     width: 500px;
     height: 500px;

@@ -2,7 +2,7 @@ let size = 16;
 let gridSize = size * size;
 
 function generateGrid() {
-    let container = document.querySelector(".container");
+    let container = document.querySelector(".board");
         containerWidth = container.clientWidth;
     for (let i = 0; i < gridSize; i++) {
         let squareDiv = document.createElement("div");
