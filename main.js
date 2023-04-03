@@ -1,14 +1,24 @@
-let size = 4;
+let size = 16;
 let gridSize = size * size;
-let divWidth = 600 / size;
 
-function generateGrid(gridSize) {
+function generateGrid() {
     let container = document.querySelector(".container");
+        containerWidth = container.clientWidth;
     for (let i = 0; i < gridSize; i++) {
         let squareDiv = document.createElement("div");
         squareDiv.classList = "square";
-        squareDiv.style.width = `${divWidth}px`;
+        squareDiv.style.width = `${containerWidth/size}px`;
         container.appendChild(squareDiv);
     } 
 }
-generateGrid(16);
+generateGrid();
+
+const squareHover = document.getElementsByClassName("square");
+   Array.from(squareHover).forEach(function(div) {
+    div.addEventListener("mouseenter", function() {
+        this.style.background = "yellow";
+    });
+    div.addEventListener("mouseleave", function() {
+        this.style.background = "red";
+    })
+   })
