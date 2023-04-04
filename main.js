@@ -92,7 +92,7 @@ function toggleButton(newMode) {
         rainbowButton.classList.remove('active');
       } 
     else if (currentMode === 'color') {
-        clearButton.classList.remove('active');
+        colorButton.classList.remove('active');
       } 
     else if (currentMode === 'eraser') {
         eraserButton.classList.remove('active');
